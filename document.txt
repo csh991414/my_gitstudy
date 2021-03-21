@@ -1,4 +1,35 @@
-#hi
-#hello
-#sherlock\
-#today's lecture
+#til.lower() 소문자로 만들기
+#til.upper() 대문자로 만들기
+#lang.append() 문자열 안에 문자 채로 넣기
+["Abc","BDSF"]
+#for i in lang:
+#print(i)
+#lang안에 모든게 나온다.
+#들여쓰기는 중요하다.
+
+#문자열
+#address.strip() =앞뒤 공백 제거
+#lend(adress) = 문자열길이
+#split( ) = 빈칸으로 쪼개기(다른거 넣을수도 있음)
+#lang [:2] 라고 하면 0,1번 인덱스가 출력됨
+
+#"_".join(리스트) 를 사용하면, 
+띄어쓰기 칸 마다 _ 를 넣어서 출력이 가능하다.
+
+---------------------------------------------------------------------
+
+#pandas
+#불러오기 import pandas as pd
+ 
+series = 벡터
+data frame = 행렬
+
+#선언할적에 df=pd.DataFrame(블라블라)
+#summarize data (a에 11이 몇번 나오는지) => df["a"].value_counts(11)
+#df.sort_values("a")  => a에 들어가는 값들로 오름차순 정렬 나머지 bc들도 a의 열에 맞춰서 정렬
+# df.sort_values("a", ascending =False) 라고 적으면 오름차순에서 내림차순으로 정렬 뒤집기
+#df.drop(["c"],axis=1) /// c열을 모두 제거하고 출력된 값을 표현.
+#df.groupby(["a"]]["b"].mean() //// a와 b의 평균값을  구해서 출력 열별로
+#df.pivot_table(df, index="a") /// a에 어떤값에 대응하는 b값의 평균을 구해서 출력.
+#
+
