@@ -72,6 +72,17 @@ For continuous variables, a pyplot.hist or seaborn.distplot may be used. For dis
 #sns.distplot - 히스토그램에서 선을 연결해서 곡선으로 부드럽게 이어지는 확률밀도함수!
 # df_raw[df_raw["국가(대륙)별"] == "미국"] - 자료중에서 미국이란 나라만 따로 빼서 자료정리 가능
 
+-------------------------------------------------------------------------
+#백준 1712 번
+
+A, B, C = map(int, input().split())
+
+if B>=C:
+    print(-1)
+else:
+    print(int(A/(C-B)+1))
+
+
 
 
 
